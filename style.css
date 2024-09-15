@@ -6,6 +6,7 @@
     --w: whitesmoke;
     --dv: rgb(27,21,64);
     --g: rgb(33,37,41);
+    --db: rgb(20,9,37);
 }
 
 .text-y {
@@ -28,75 +29,44 @@
     background-color: var(--g);
 }
 
-h1, h2, h3, h4, h5, h6, p, time {
+.bg-db {
+    background-color: var(--db);
+}
+
+h1, h2, h3, p, time {
     color: var(--w);
+}
+
+.bg-custom {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Header */
 
 .custom-hdr {
     background-image: url(./media/bg-1.jpg);
-    height: 750px;
-    padding-top: 30px;
-}
-
-.first {
-    margin-top: 50px;
-}
-
-.cabinato {
-    height: 600px;
-    width: 500px;
-}
-
-.prima {
-    margin-left: 200px;
-}
-
-.webinar {
-    margin-bottom: 20px;
-}
-
-.font {
-    font-weight: 600;
-}
-
-.calendar-custom {
-    display: inline-block;
-    width:40px;
-    height:40px;
-    color: var(--y);
 }
 
 .btn-custom {
-    height: 50px;
-    width: 240px;
     border: 1px solid var(--y);
-    color: var(--y);
     background-color: transparent;
-    border-radius: 25px 25px;
-    margin-top: 40px;
 }
 
-.logo-custom {
-    height: 60px;
-    width: 150px;
-    margin-bottom: 50px;
+.btn-custom:hover {
+    background-color: var(--y);
+    color: black;
 }
 
-/* Main */
-
-main {
-    height: 500px;
+.bi-calendar2-week {
+    color: var(--y);
+    height: 40px;
+    width: 40px;
 }
 
-.console-custom {
-    height: 350px;
-    width: 300px;
-}
-
-.allinea {
-    padding-top: 55px;
+.data {
+    font-weight: 700;
 }
 
 /* Aside */
@@ -105,20 +75,10 @@ main {
     background-image: url(./media/bg-2.jpg);
 }
 
-/* Form */
-
-.bg-custom {
-    height: 800px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .rettangolo {
-    height: 650px;
-    width: 450px;
     border-radius: 5% 5%;
-    margin-top: -700px;
     position: relative;
+    margin-bottom: -100px;
 }
 
 .form {
@@ -128,94 +88,48 @@ main {
     border-bottom: solid 1px rgb(255, 0, 149);
 }
 
-.form-custom {
-    height: 200px;
-}
-
-.wrap {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 30px;
-}
-
-.titoletto {
-    margin-top: 40px;
-}
-
 .round {
     height: 60px;
     width: 60px;
     display: flex;
     border-radius: 50%;
+    flex-wrap: nowrap;
+    margin-top: 30px;
 }
 
 .bi-calendar2-minus {
     height: 30px;
     width: 30px;
-}
-
-.paese {
-    margin-left: -3.5px;
-    margin-right: 25.8px;
-}
-
-.paese, .numero {
-    margin-top: 20px;
-}
-
-.form-check {
-    padding-top: 20px;
-    padding-left: 30px;
+    display: inline-block;
 }
 
 .btn2 {
-    margin-top: 30px;
-    width: 425px;
     color: black;
+}
+
+.btn2:hover {
     background-color: var(--y);
+    animation: pulse 0.8s infinite;
 }
 
-/* Footer */
+@keyframes pulse {
+    0%,
+    100% {
+      animation-timing-function: linear;
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+ 
+/* Section 1 */
 
-footer {
-    margin-top: -55px;
+.section-1 {
+    padding: 100px 20px;
 }
 
-.centro {
-    margin-top: 80px;
-}
-
-.sec-logo {
-    height: 500px;
-    background-color: rgb(20,9,37);
-}
-
-.logo-fut-custom {
-    height: 350px;
-    width: 380px;
-}
-
-.sec-foto {
-    height: 565px;
-    background-size: cover;
-}
+/* Section 2 */
 
 .speaker {
     background-image: url(./media/bg-3.jpg);
 }
-
-.foto {
-    height: 420px;
-    width: 300px;
-    margin-top: 88px;
-}
-
-.testo {
-    margin-left: 240px;
-    margin-right: 50px;
-}
-
-.ultimo {
-    margin: 0px;
-}
-
